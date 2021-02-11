@@ -1,0 +1,38 @@
+.navbar-brand {
+    height: 55px;
+    padding: 0 0 0 0;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.navbar-header .navbar-brand {
+    height: 130px;
+    width: 150px;
+    padding: 0px 2px 2px 2px;
+}
+
+.navbar-header .logo {
+    height: 150px;
+    padding: 14px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.vertical-align-style {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+.main-header .logo {
+    padding: 0px;
+}
+
+.centerall {
+    height: 70vh;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}

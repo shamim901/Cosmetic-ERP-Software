@@ -1,0 +1,1 @@
+ALTER TABLE `librarys` ADD `is_model_mosque` INT(5) NOT NULL AFTER `have_signboard`;

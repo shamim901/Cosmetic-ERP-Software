@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+@import '~@braid/vue-formulate/themes/snow/snow.scss';
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+html {
+  font-size: inherit;
+}
+
+* {
+  font-family: inherit;
+}
+
+.formulate-input {
+  margin-bottom: 1em;
+}
+
+.formulate-input .formulate-input-label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.formulate-input .formulate-input-element {
+  max-width: 100%;
+  margin-bottom: .1em;
+}
+
+.formulate-input .formulate-file-upload-error, .formulate-input .formulate-input-error {
+  color: #ff3860;
+  font-size: .75rem;
+}
+
+.formulate-input[data-classification=text] input {
+  font-size: 1em;
+}
+
+.formulate-input[data-classification=select] select {
+  font-size: 1em;
+}

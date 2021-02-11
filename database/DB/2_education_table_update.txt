@@ -1,0 +1,1 @@
+ALTER TABLE `imam_educations` ADD `imam_id` INT NULL DEFAULT NULL AFTER `id`, ADD `khotib_id` INT NULL DEFAULT NULL AFTER `imam_id`, ADD `muajjin_id` INT NULL DEFAULT NULL AFTER `khotib_id`;

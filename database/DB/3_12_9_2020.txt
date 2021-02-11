@@ -1,0 +1,3 @@
+ALTER TABLE `mua_registration` DROP `exam_name`, DROP `board_uni`, DROP `institue_name`, DROP `result`, DROP `year`, DROP `depart`;
+
+ALTER TABLE `imam_educations` ADD `imam_id` INT NULL DEFAULT NULL AFTER `id`, ADD `khotib_id` INT NULL DEFAULT NULL AFTER `imam_id`, ADD `muajjin_id` INT NULL DEFAULT NULL AFTER `khotib_id`;

@@ -1,0 +1,57 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Sep 22, 2020 at 01:25 PM
+-- Server version: 10.4.13-MariaDB
+-- PHP Version: 7.4.7
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `coxsbike_ifb_2`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `emp_attikoron`
+--
+
+CREATE TABLE `emp_attikoron` (
+  `ATTIKORON_ID` int(11) NOT NULL,
+  `EMP_ID` int(11) NOT NULL,
+  `ATTIKORON_GIVEN_BY` int(11) NOT NULL,
+  `BRANCH_ID` int(11) DEFAULT NULL,
+  `DEPARTMENT_ID` int(11) NOT NULL DEFAULT 0,
+  `DESIGNATION_ID` int(11) NOT NULL DEFAULT 0,
+  `ATTIKORON_DATE` timestamp NOT NULL DEFAULT current_timestamp(),
+  `CREATED_BY` int(11) NOT NULL,
+  `CREATED_DATE` timestamp NOT NULL DEFAULT current_timestamp(),
+  `MODIFY_BY` int(11) DEFAULT NULL,
+  `MODIFY_DATE` datetime DEFAULT NULL,
+  `IS_DELETED` tinyint(1) NOT NULL DEFAULT 0 COMMENT '1=DELETED, 0=NOT DELETED',
+  `DELETED_BY` int(11) DEFAULT NULL,
+  `DELETED_DATE` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `emp_attikoron`
+--
+
+INSERT INTO `emp_attikoron` (`ATTIKORON_ID`, `EMP_ID`, `ATTIKORON_GIVEN_BY`, `BRANCH_ID`, `DEPARTMENT_ID`, `DESIGNATION_ID`, `ATTIKORON_DATE`, `CREATED_BY`, `CREATED_DATE`, `MODIFY_BY`, `MODIFY_DATE`, `IS_DELETED`, `DELETED_BY`, `DELETED_DATE`) VALUES
+(0, 1, 0, NULL, 0, 0, '2020-09-02 18:00:00', 0, '2020-09-22 10:03:08', NULL, NULL, 0, NULL, NULL);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
